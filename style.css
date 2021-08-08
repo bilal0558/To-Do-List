@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+*::-webkit-scrollbar{
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+    background: #303030;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: #1d5e0a;
+    border-radius: 10px;
+    
+}
+
+
+.container{
+    /*position: relative;
+    top: 200px;*/
+    background: #303030;
+    padding: 10px;
+    border-radius: 10px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    height: 80%;
+}
+
+.heading{
+    margin:10px 0px 0px 10px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#today{
+    margin:0px 0px 15px 10px;
+    font-size: 1em;
+    font-weight: 400;
+    color: rgb(150,150,150);
+}
+
+.new-task{
+    background: #121212;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+button{
+    float: right;
+    background: #1d5e0a;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    transition: background 200ms;
+}
+
+button:hover{
+    background: #2d7716;
+}
+
+input[type="text"]{
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#new-task-text-field:focus, #add:focus{
+    outline: none;
+}
+
+.tasks{
+    background: #121212;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    overflow: auto;
+    height: 100%;
+}
+
+.list-item{
+    width: 100%;
+    border-bottom: 2px solid #353535;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task{
+    margin-left: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: rgb(100,100,100);
+}
